@@ -8,6 +8,7 @@ console.log(`Color ${auto1.color}`); //Lectura
 console.log(`Color ${auto2.color}`); //Lectura
 auto1.color = "Amarillo"; //Escritura
 auto2.color = "Azul"; //Escritura
+auto1.modelo = 1990;
 
 auto2.encender();
 auto3.encender();

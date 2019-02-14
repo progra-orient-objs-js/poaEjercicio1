@@ -19,6 +19,14 @@ export default class Auto {
         return this._color = color.toUpperCase();
     }
 
+    set modelo(modelo) {
+       if (modelo < 2000) {
+           this._modelo = 2000;
+       } else {
+           this._modelo = modelo;
+       }
+    }
+
     // "set" para escribir
 
     mostrarEstado() {
@@ -41,7 +49,7 @@ export default class Auto {
         } else {
             let distancia = velocidad * tiempo;
             this._kilometraje = this._kilometraje + distancia;
-            this.mostrarEstado();
+            this._mostrarEstado();
         }
     }
 
